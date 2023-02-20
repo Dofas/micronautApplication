@@ -11,6 +11,7 @@ public class HelloWorldController {
     @Get("/world")
     @Produces(MediaType.TEXT_PLAIN)
     public String printHelloWorld(){
+        InterfaceWithCode.withCode();
         return "Hello world";
     }
 }
